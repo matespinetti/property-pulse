@@ -1,13 +1,16 @@
+import Hero from "@/components/Hero";
+import HomeProperties from "@/components/HomeProperties";
+import InfoBoxes from "@/components/InfoBoxes";
+import connectDB from "@/config/database";
 
 const HomePage = () => {
-    return (
-        <div>
-        <h1 className="">Home Page</h1>
-        <p className="text-red-700">Welcome to the home page  </p>
-        </div>
-    );
-    }
-
-
+	return (
+		<div>
+			<Hero />
+			<InfoBoxes />
+			<HomeProperties />
+		</div>
+	);
+};
 
 export default HomePage;
